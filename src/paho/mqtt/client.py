@@ -2534,6 +2534,7 @@ class Client(object):
                             rc = self._update_inflight()
                         if rc != MQTT_ERR_SUCCESS:
                             return rc
+                    break
 
         return self._send_pubcomp(mid)
 
